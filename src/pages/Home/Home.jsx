@@ -1,3 +1,5 @@
+import Navber from "../../Layout/Navber/Navber";
+import Banner from "../Banner";
 import Cars from "../Cars";
 
 
@@ -6,7 +8,9 @@ const Home = () => {
 
     return (
         <div>
-          <Cars></Cars>
+            <Navber></Navber>
+            <Banner></Banner>
+            <Cars></Cars>
         </div>
     );
 };

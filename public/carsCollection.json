@@ -4,110 +4,70 @@
         "modelName": "Elegance X1",
         "carName": "Luxury Sedan",
         "rentalPrice": 150,
-        "images": [
-          "luxury_sedan_1.jpg",
-          "luxury_sedan_2.jpg",
-          "luxury_sedan_3.jpg"
-        ],
+        "images": "https://i.ibb.co/TTCZ73H/yannis-zaugg-YBTXMog-UQSo-unsplash.jpg",
         "features": ["Leather Seats", "Advanced Safety System", "Premium Sound System"]
       },
       {
         "modelName": "Explorer Pro",
         "carName": "SUV Explorer",
         "rentalPrice": 120,
-        "images": [
-          "suv_explorer_1.jpg",
-          "suv_explorer_2.jpg",
-          "suv_explorer_3.jpg"
-        ],
+        "images": "https://i.ibb.co/s17Y8gT/kenny-eliason-er-Mxh4p-VLAY-unsplash.jpg",
         "features": ["Spacious Interior", "Off-Road Capability", "Towing Package"]
       },
       {
         "modelName": "Compact Sprint",
         "carName": "Compact Hatchback",
         "rentalPrice": 80,
-        "images": [
-          "compact_hatchback_1.jpg",
-          "compact_hatchback_2.jpg",
-          "compact_hatchback_3.jpg"
-        ],
+        "images": "https://i.ibb.co/vxMN8D8/tomas-martinez-7-OIHt5-G6-QTU-unsplash.jpg",
         "features": ["Fuel-Efficient", "Easy to Park", "Modern Infotainment"]
       },
       {
         "modelName": "Roadster Elite",
         "carName": "Convertible Roadster",
         "rentalPrice": 200,
-        "images": [
-          "convertible_roadster_1.jpg",
-          "convertible_roadster_2.jpg",
-          "convertible_roadster_3.jpg"
-        ],
+        "images": "https://i.ibb.co/BPfwVXW/grayom-z-Hulnp-DOc8-unsplash.jpg",
         "features": ["Open-Top Driving Experience", "Sporty Design", "Navigation System"]
       },
       {
         "modelName": "City Cruiser",
         "carName": "Urban Compact",
         "rentalPrice": 90,
-        "images": [
-          "urban_compact_1.jpg",
-          "urban_compact_2.jpg",
-          "urban_compact_3.jpg"
-        ],
+        "images": "https://i.ibb.co/JtgCTxZ/alina-nichepurenko-d-KUGg-Ii7-C-c-unsplash.jpg",
         "features": ["City-Friendly Size", "Fuel-Efficient", "Smart Parking Assist"]
       },
       {
         "modelName": "Adventure Seeker",
         "carName": "Off-Road Adventure",
         "rentalPrice": 180,
-        "images": [
-          "off_road_adventure_1.jpg",
-          "off_road_adventure_2.jpg",
-          "off_road_adventure_3.jpg"
-        ],
+        "images": "https://i.ibb.co/fqpH5Ts/denys-nevozhai-QD-8l-8-u-Jg-unsplash.jpg",
         "features": ["4x4 Capability", "Roof Rack for Gear", "Rugged Design"]
       },
       {
         "modelName": "Executive Class",
         "carName": "Business Sedan",
         "rentalPrice": 160,
-        "images": [
-          "business_sedan_1.jpg",
-          "business_sedan_2.jpg",
-          "business_sedan_3.jpg"
-        ],
+        "images": "https://i.ibb.co/R3Hst5T/hyundai-motor-group-3-R-0n-BOla-Oc-unsplash.jpg",
         "features": ["Luxurious Interior", "Executive Style", "Advanced Tech"]
       },
       {
         "modelName": "Family Voyager",
         "carName": "Minivan",
         "rentalPrice": 130,
-        "images": [
-          "minivan_1.jpg",
-          "minivan_2.jpg",
-          "minivan_3.jpg"
-        ],
+        "images": "https://i.ibb.co/8gSWPc3/nikhil-mistry-i0-Pzu-Pn-Wv-U-unsplash.jpg",
         "features": ["Spacious Seating", "Entertainment System", "Family-Friendly"]
       },
       {
         "modelName": "Sports Enthusiast",
         "carName": "Sports Coupe",
         "rentalPrice": 220,
-        "images": [
-          "sports_coupe_1.jpg",
-          "sports_coupe_2.jpg",
-          "sports_coupe_3.jpg"
-        ],
+        "images": "https://i.ibb.co/tqt5H6z/ryan-Sb6m7sj0-QU-unsplash.jpg",
         "features": ["High-Performance Engine", "Dynamic Handling", "Bold Design"]
       },
       {
         "modelName": "Green Explorer",
         "carName": "Electric SUV",
         "rentalPrice": 200,
-        "images": [
-          "electric_suv_1.jpg",
-          "electric_suv_2.jpg",
-          "electric_suv_3.jpg"
-        ],
+        "images": "https://i.ibb.co/30fpwR7/ryno-marais-b-Ne9-Pu-GDIic-unsplash.jpg",
         "features": ["Zero Emissions", "Long Range", "Smart Charging"]
       }
     ]

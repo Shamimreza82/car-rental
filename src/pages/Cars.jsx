@@ -3,12 +3,15 @@ import { useEffect, useRef, useState } from "react";
 import { FaCalendar, FaCar, FaLocationArrow } from "react-icons/fa";
 import ContainerSmall from "../components/Container/ContainerSmall";
 import { useForm } from "react-hook-form";
+import useCarsData from "../Hooks/useCarsData";
 
 const Cars = () => {
-  const [cars, setCars] = useState([]);
+//   const [cars, setCars] = useState([]);
   const [model, setModel] = useState("");
   const [summery, setSummery] = useState({})
-  console.log(summery);
+  const {cars} = useCarsData()
+
+  console.log(cars);
 
   const {
     register,
@@ -17,25 +20,26 @@ const Cars = () => {
     formState: { errors },
   } = useForm();
 
+
+
   const onSubmit = (data) => {
     const carname = model
-    const newData = {...data, carname }
+    console.log(carname);
+
+    const carsImg = cars.find(car => car.carName === carname)
+    const {images} = carsImg
+  
+
+    const newData = {...data, carname, images}
     setSummery(newData)
+   
   };
 
   const handelSuccess = () => {
 
-    
-
   }
 
 
-
-  useEffect(() => {
-    fetch("carsCollection.json")
-      .then((res) => res.json())
-      .then((data) => setCars(data));
-  }, []);
 
   return (
     <div>
@@ -66,10 +70,10 @@ const Cars = () => {
                   <FaLocationArrow></FaLocationArrow> Pick-up (Dhaka city area)
                 </label>
                 <input
-                {...register('Pick-Up-Place')}
+                {...register('PickUpPlace')}
                   className="text-gray-400 p-2 rounded-sm w-full "
                   type="text"
-                  name="Pick-Up-Place"
+                  name="PickUpPlace"
                   id=""
                 />
               </div>
@@ -78,10 +82,10 @@ const Cars = () => {
                   <FaLocationArrow></FaLocationArrow> Drop-off (Dhaka city area)
                 </label>
                 <input
-                 {...register('Drop-off-Place')}
+                 {...register('DropoffPlace')}
                   className="text-gray-400 p-2 rounded-sm w-full "
                   type="text"
-                  name="Drop-off-Place"
+                  name="DropoffPlace"
                   id=""
                 />
               </div>
@@ -92,10 +96,10 @@ const Cars = () => {
                   <FaCalendar></FaCalendar> Pick-up Date
                 </label>
                 <input
-                {...register('Pick-up')}
+                {...register('PickUp')}
                   className="text-gray-400 p-2 rounded-sm w-full "
                   type="date"
-                  name="Pick-up"
+                  name="PickUp"
                   id=""
                 />
               </div>
@@ -104,10 +108,10 @@ const Cars = () => {
                   <FaCalendar></FaCalendar> Drop-off Date
                 </label>
                 <input
-                    {...register('Drop-off')}
+                    {...register('DropOff')}
                   className="text-gray-400 p-2 rounded-sm w-full "
                   type="date"
-                  name="Drop-off"
+                  name="DropOff"
                   id=""
                 />
               </div>
@@ -134,7 +138,7 @@ const Cars = () => {
           <div>
                 <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
-                    <h3 className="font-bold text-lg">{summery.Drop-off}</h3>
+                    <h3 className="font-bold text-2xl text-center">{summery.carname}</h3>
                     <p className="py-4">Press ESC key or click the button below to close</p>
                     <div className="modal-action">
                     <form method="dialog" className="flex gap-5">
