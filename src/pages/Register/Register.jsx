@@ -13,6 +13,10 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import useAuth from '../../Hooks/useAuth';
+import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
+import { FcGoogle } from "react-icons/fc";
+import SocialLogin from '../../components/SocialLogin/SocialLogin';
 
 function Copyright(props) {
   return (
@@ -32,6 +36,7 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 
 export default function Register() {
+    const navigate = useNavigate()
 
     const {user, createUser} = useAuth()
 
@@ -49,7 +54,8 @@ export default function Register() {
 
     const result = await createUser(user.email, user.password)
     console.log(result.user);
-
+    toast.success("Register Successful")
+    navigate('/')
   };
 
   return (
@@ -58,7 +64,7 @@ export default function Register() {
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 5,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -136,9 +142,13 @@ export default function Register() {
                 </Link>
               </Grid>
             </Grid>
+           
           </Box>
+          <div>
+           <SocialLogin></SocialLogin>
+          </div>
         </Box>
-        <Copyright sx={{ mt: 5 }} />
+        <Copyright sx={{ mt: 2 }} />
       </Container>
     </ThemeProvider>
   );

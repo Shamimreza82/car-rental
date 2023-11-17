@@ -14,6 +14,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import useAuth from '../../Hooks/useAuth';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+import SocialLogin from '../../components/SocialLogin/SocialLogin';
 
 
 
@@ -123,7 +124,10 @@ export default function Login() {
             </Grid>
           </Box>
         </Box>
-        <Copyright sx={{ mt: 8, mb: 4 }} />
+        <div className='flex justify-center'>
+          <SocialLogin></SocialLogin>
+        </div>
+        <Copyright sx={{ mt: 4, mb: 4,  }} />
       </Container>
     </ThemeProvider>
   );
